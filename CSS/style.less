@@ -4,3 +4,39 @@
     font-family: Verdana,sans-serif;
     font-size: 15px;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+
+    > a {
+        letter-spacing: 3px;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-family: "Raleway", sans-serif;
+        padding: 16px;
+        font-weight: 300;
+
+        &:hover {
+            background-color: #cccccc;
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+    }
+}
+
+
