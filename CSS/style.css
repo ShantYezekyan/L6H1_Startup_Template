@@ -85,3 +85,44 @@ nav ul {
 .home_icons i:hover {
   color: #75757565;
 }
+.container {
+  padding: 128px 16px;
+}
+h2 {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 200;
+  margin: 10px 0;
+}
+h3 {
+  text-align: center;
+  font-size: 18px;
+  margin: 18px 0;
+  font-weight: 200;
+}
+.about_content {
+  height: auto;
+}
+.about_icon {
+  display: flex;
+  margin-top: 64px;
+  padding: 0px 8px;
+  text-align: center;
+}
+.about_icon div {
+  padding: 0 8px;
+}
+.about_icon i {
+  display: block;
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+.about_icon h4 {
+  margin: 18px 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+.about_icon p {
+  margin: 15px 0;
+}
