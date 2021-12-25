@@ -126,3 +126,38 @@ h3 {
 .about_icon p {
   margin: 15px 0;
 }
+.promo_content {
+  background-color: #f1f1f1;
+  height: auto;
+  display: flex;
+}
+.promo_text {
+  padding: 0 8px;
+  width: 49%;
+}
+.promo_text h2 {
+  text-align: left;
+}
+.promo_text p {
+  display: block;
+  margin: 15px 0;
+  font-weight: 200;
+}
+.promo_text a {
+  display: inline-block;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+.promo_text a:hover {
+  color: black;
+  background-color: #CCCCCC;
+}
+.promo_img {
+  background-image: url('https://www.w3schools.com/w3images/phone_buildings.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 394px;
+}
