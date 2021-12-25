@@ -1,8 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Verdana, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 15px;
+  line-height: 1.8;
 }
 nav {
   display: flex;
@@ -32,4 +33,55 @@ nav a:hover {
 nav ul {
   list-style: none;
   display: flex;
+}
+.main_bgm {
+  background-image: url('https://www.w3schools.com/w3images/mac.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  filter: grayscale(50%);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.home_text_container {
+  padding: 48px;
+  color: white;
+  font-weight: 300;
+}
+.home_text_container a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 12px 24px;
+  margin-top: 16px;
+  font-size: 18px;
+  background-color: #ffffff99;
+}
+.home_text_container a:hover {
+  background-color: #ffffffc0;
+}
+.home_text_container .slogan-1 {
+  display: block;
+  font-size: 64px;
+  margin: 15px 0;
+}
+.home_text_container .slogan-2 {
+  display: block;
+  font-size: 18px;
+  margin: 15px 0;
+}
+.home_icons {
+  position: absolute;
+  font-size: 18px;
+  bottom: 0;
+  left: 0;
+  padding: 24px 48px;
+}
+.home_icons i {
+  color: #757575;
+}
+.home_icons i:hover {
+  color: #75757565;
 }
