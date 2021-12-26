@@ -207,3 +207,22 @@ h3 {
   cursor: pointer;
   background-color: #dbdbdb;
 }
+.stat_content {
+  background-color: #616161;
+  color: white;
+  text-align: center;
+  padding: 64px 8px;
+  display: flex;
+  justify-content: space-around;
+}
+.stat_content .stats {
+  display: block;
+  width: 24.9%;
+}
+.stat_content h4 {
+  font-size: 36px;
+  font-weight: 400;
+}
+.stat_content h5 {
+  font-weight: 300;
+}
