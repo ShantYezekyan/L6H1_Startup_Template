@@ -244,6 +244,7 @@ h3 {
 .skills {
   background-color: #f1f1f1;
   display: flex;
+  padding: 64px 16px;
 }
 .skills_info {
   width: 49%;
