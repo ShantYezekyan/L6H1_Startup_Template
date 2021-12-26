@@ -29,6 +29,7 @@ nav a {
 }
 nav a:hover {
   background-color: #cccccc;
+  cursor: pointer;
 }
 nav ul {
   list-style: none;
@@ -61,6 +62,7 @@ nav ul {
 }
 .home_text_container a:hover {
   background-color: #ffffffc0;
+  cursor: pointer;
 }
 .home_text_container .slogan-1 {
   display: block;
@@ -84,6 +86,7 @@ nav ul {
 }
 .home_icons i:hover {
   color: #75757565;
+  cursor: pointer;
 }
 .container {
   padding: 128px 16px;
@@ -153,6 +156,7 @@ h3 {
 .promo_text a:hover {
   color: black;
   background-color: #CCCCCC;
+  cursor: pointer;
 }
 .promo_img {
   background-image: url('https://www.w3schools.com/w3images/phone_buildings.jpg');
@@ -387,6 +391,11 @@ form button {
   font-weight: 200;
   border: none;
 }
+form button:hover {
+  background-color: #a8a7a7;
+  color: black;
+  cursor: pointer;
+}
 .contact_img {
   background-image: url(https://www.w3schools.com/w3images/map.jpg);
   background-position: center;
@@ -394,4 +403,43 @@ form button {
   height: 100vh;
   margin-top: 48px;
   filter: grayscale(50%);
+}
+footer {
+  padding: 64px 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+footer > a {
+  text-decoration: none;
+  color: black;
+  background-color: #f1f1f1;
+  display: inline-block;
+  padding: 8px 16px;
+  font-weight: 250;
+}
+footer > a:hover {
+  background-color: #dbdbdb;
+  cursor: pointer;
+}
+footer > a i {
+  margin-right: 13px;
+}
+footer p {
+  margin: 15px 0;
+}
+footer p > a {
+  color: white;
+}
+footer p > a:hover {
+  color: green;
+  cursor: pointer;
+}
+.footer_icons {
+  margin: 16px 0;
+  font-size: 24px;
+}
+.footer_icons i:hover {
+  color: #b9b9b9;
+  cursor: pointer;
 }
