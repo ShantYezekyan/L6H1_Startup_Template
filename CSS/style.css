@@ -354,3 +354,44 @@ h3 {
   color: white;
   padding: 12px 24px;
 }
+.contact {
+  background-color: #f1f1f1;
+}
+.contact_info {
+  margin-top: 48px;
+}
+.contact_info p {
+  margin: 15px 0;
+}
+.contact_info i {
+  display: inline-block;
+  width: 30px;
+  font-size: 36px;
+  text-align: center;
+  margin-right: 16px;
+}
+form {
+  margin-top: 48px;
+}
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+}
+form button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  font-weight: 200;
+  border: none;
+}
+.contact_img {
+  background-image: url(https://www.w3schools.com/w3images/map.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin-top: 48px;
+  filter: grayscale(50%);
+}
