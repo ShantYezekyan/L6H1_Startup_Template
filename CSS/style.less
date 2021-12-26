@@ -6,7 +6,11 @@
     line-height: 1.8;
 }
 
-nav {
+.nav_mobile {
+    display: none;
+}
+
+.nav_main {
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -537,3 +541,148 @@ footer {
         cursor: pointer;
     }
 }
+
+@media only screen and (max-width: 600px) {
+
+    .nav_main, .nav_menu {
+        display: none;
+    }
+
+    .nav_mobile {
+        display: block;
+    }
+
+    .nav_header {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        z-index: 9;
+
+        > a {
+                letter-spacing: 3px;
+                color: black;
+                text-decoration: none;
+                padding: 16px;
+                font-weight: 300;
+                text-transform: uppercase;
+            }
+
+        input {
+            visibility: hidden;
+
+            &:checked ~ .nav_menu {
+                display: block;
+            }
+        }
+
+        > label {
+            display: block;
+            width: 56px;
+            height: 56px;
+            text-align: center;
+            i {
+                font-size: 25px;
+                padding: 16px;
+            }
+
+            &:hover {
+                background-color: #ccc;
+            }
+        }
+
+    }
+
+    .nav_menu {
+        position: absolute;
+        z-index: 100;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        width: 35%;
+        height: 100vh;
+        position: fixed;
+        
+        ul {
+            list-style: none; 
+        }
+
+        li {
+            width: 100%;
+        }
+
+        a, .close_button {
+            display: block;
+            text-decoration: none;
+            color: black;
+            padding: 8px 16px;
+            font-weight: 300;
+            color: white;
+
+            &:hover {
+                color: black;
+                background-color: #dbdbdb;
+            }
+        }
+
+        .close_button {
+            font-size: 18px!important;
+            padding: 16px!important;
+        }
+                    
+    }
+
+    .about_icon {
+        flex-direction: column;
+        > div {
+            margin-top: 16px;
+        }
+    }
+
+    .promo_content {
+        flex-direction: column;
+    }
+
+    .promo_img {
+        width: auto;
+        margin-top: 16px;
+        padding: 0 8px;
+    }
+
+    .card_container {
+        flex-direction: column;
+
+        .cards {
+            width: auto;
+            margin-top: 16px;
+        }
+    }
+
+    .imgBlock_container {
+        flex-direction: column;
+        
+        .img_blocks {
+            width: auto;
+        }
+    }
+
+    .skills {
+        flex-direction: column;
+
+        .skills_info, .skills_categories {
+            width: auto;
+        }
+    }
+
+    .price_card_container {
+        flex-direction: column;
+
+        .pricing_cards {
+            width: auto;
+            margin-top: 16px;
+        }
+    }
+
+    .contact_img {
+        height: 40vh;
+    }
+}
+

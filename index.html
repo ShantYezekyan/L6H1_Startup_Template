@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="nav_main">
         <a href="#home">Logo</a>
         <ul>
             <li><a href="#about">About</a></li>
@@ -39,6 +39,33 @@
                 </a>
             </li>
         </ul>
+    </nav>
+
+    <nav class="nav_mobile">
+        <div class="nav_header">
+            <a href="#home">Logo</a>
+            <input type="checkbox" id="BurgerButton">
+            <label for="BurgerButton">
+                <i class="fa fa-bars"></i>
+            </label>
+
+            <div class="nav_menu">
+                <ul>
+                    <li>
+                        <label class="close_button" for="BurgerButton">Close x</label>
+                    </li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#team">TEAM</a></li>
+                    <li><a href="#work">WORK</a></li>
+                    <li><a href="#pricing">PRICING</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+        
+            </div>
+    
+        </div>
+    
+    
     </nav>
 
     <header class="main_bgm" id="home">
@@ -95,8 +122,6 @@
                         labore et dolore.
                     </p>
                 </div>
-
-            </div>
 
             </div>
 
