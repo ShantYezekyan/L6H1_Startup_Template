@@ -288,3 +288,69 @@ h3 {
 .fill-3 {
   width: 75%;
 }
+.pricing {
+  background-color: #616161;
+}
+.pricing h2,
+.pricing h3 {
+  color: white;
+}
+.price_card_container {
+  margin-top: 64px;
+  padding: 0 8px;
+  display: flex;
+}
+.price_card_container .Big {
+  margin-top: 0;
+}
+.price_card_container .Big .card_header {
+  background-color: #f44336;
+  padding: 48px 16px;
+}
+.pricing_cards {
+  text-align: center;
+  width: 33%;
+  padding: 0 8px;
+  margin-top: 16px;
+}
+.pricing_cards ul {
+  list-style: none;
+}
+.pricing_cards ul:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.pricing_cards .card_header {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  padding: 32px 16px;
+}
+.pricing_cards .card_items {
+  background-color: white;
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  font-weight: 200;
+}
+.pricing_cards .card_items b {
+  font-weight: 400;
+}
+.pricing_cards .card_items h4 {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  margin: 10px 0;
+}
+.pricing_cards .card_items h5 {
+  color: grey;
+  font-weight: 200;
+}
+.pricing_cards li:last-of-type {
+  background-color: #f1f1f1;
+  padding: 24px 16px;
+}
+.pricing_cards button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 12px 24px;
+}
