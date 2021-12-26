@@ -1,6 +1,567 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Verdana, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 15px;
+  line-height: 1.8;
+}
+.nav_mobile {
+  display: none;
+}
+.nav_main {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.nav_main > a {
+  letter-spacing: 3px;
+}
+.nav_main a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  padding: 16px;
+  font-weight: 300;
+}
+.nav_main a:hover {
+  background-color: #cccccc;
+  cursor: pointer;
+}
+.nav_main ul {
+  list-style: none;
+  display: flex;
+}
+.main_bgm {
+  background-image: url('https://www.w3schools.com/w3images/mac.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  filter: grayscale(50%);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.home_text_container {
+  padding: 48px;
+  color: white;
+  font-weight: 300;
+}
+.home_text_container a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 12px 24px;
+  margin-top: 16px;
+  font-size: 18px;
+  background-color: #ffffff99;
+}
+.home_text_container a:hover {
+  background-color: #ffffffc0;
+  cursor: pointer;
+}
+.home_text_container .slogan-1 {
+  display: block;
+  font-size: 64px;
+  margin: 15px 0;
+}
+.home_text_container .slogan-2 {
+  display: block;
+  font-size: 18px;
+  margin: 15px 0;
+}
+.home_icons {
+  position: absolute;
+  font-size: 18px;
+  bottom: 0;
+  left: 0;
+  padding: 24px 48px;
+}
+.home_icons i {
+  color: #757575;
+}
+.home_icons i:hover {
+  color: #75757565;
+  cursor: pointer;
+}
+.container {
+  padding: 128px 16px;
+}
+h2 {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 200;
+  margin: 10px 0;
+}
+h3 {
+  text-align: center;
+  font-size: 18px;
+  margin: 18px 0;
+  font-weight: 200;
+}
+.about_content {
+  height: auto;
+}
+.about_icon {
+  display: flex;
+  margin-top: 64px;
+  padding: 0px 8px;
+  text-align: center;
+}
+.about_icon div {
+  padding: 0 8px;
+}
+.about_icon i {
+  display: block;
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+.about_icon h4 {
+  margin: 18px 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+.about_icon p {
+  margin: 15px 0;
+}
+.promo_content {
+  background-color: #f1f1f1;
+  height: auto;
+  display: flex;
+}
+.promo_text {
+  padding: 0 8px;
+  width: 49%;
+}
+.promo_text h2 {
+  text-align: left;
+}
+.promo_text p {
+  display: block;
+  margin: 15px 0;
+  font-weight: 200;
+}
+.promo_text a {
+  display: inline-block;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+.promo_text a:hover {
+  color: black;
+  background-color: #CCCCCC;
+  cursor: pointer;
+}
+.promo_img {
+  background-image: url('https://www.w3schools.com/w3images/phone_buildings.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 394px;
+}
+.card_container {
+  margin-top: 64px;
+  padding: 0 8px;
+  display: flex;
+  justify-content: space-around;
+}
+.cards {
+  display: block;
+  width: 24%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.card_img {
+  display: block;
+  filter: grayscale(75%);
+}
+.card_img img {
+  width: 100%;
+}
+.card_info {
+  padding: 0 16px;
+}
+.card_info h2 {
+  text-align: left;
+}
+.card_info h5 {
+  margin: 15px 0;
+  color: #757575;
+  font-weight: 200;
+}
+.card_info p {
+  margin: 15px 0;
+  font-weight: 300;
+}
+.card_info button {
+  display: block;
+  width: 100%;
+  background-color: #f1f1f1;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  margin: 15px 0;
+}
+.card_info button:hover {
+  cursor: pointer;
+  background-color: #dbdbdb;
+}
+.stat_content {
+  background-color: #616161;
+  color: white;
+  text-align: center;
+  padding: 64px 8px;
+  display: flex;
+  justify-content: space-around;
+}
+.stat_content .stats {
+  display: block;
+  width: 24.9%;
+}
+.stat_content h4 {
+  font-size: 36px;
+  font-weight: 400;
+}
+.stat_content h5 {
+  font-weight: 300;
+}
+.imgBlock_container {
+  margin-top: 64px;
+  padding: 0 8px;
+  display: flex;
+}
+.imgBlock_container:last-of-type {
+  margin-top: 16px;
+}
+.img_blocks {
+  width: 24%;
+  padding: 0 8px;
+}
+.img_blocks img {
+  width: 100%;
+}
+.skills {
+  background-color: #f1f1f1;
+  display: flex;
+  padding: 64px 16px;
+}
+.skills_info {
+  width: 49%;
+  padding: 0 8px;
+}
+.skills_info h2 {
+  text-align: left;
+}
+.skills_info p {
+  margin: 15px 0;
+  font-weight: 200;
+}
+.skills_categories {
+  width: 49%;
+  padding: 0 8px;
+}
+.skills_categories p {
+  margin: 15px 0;
+  font-weight: 200;
+  letter-spacing: 4px;
+}
+.skills_categories p i {
+  margin-right: 10px;
+}
+.skillBar_bg {
+  width: 100%;
+  background-color: #9e9e9e;
+  text-align: center;
+  color: white;
+  font-weight: 200;
+}
+.skillBar {
+  background-color: #616161;
+}
+.fill-1 {
+  width: 90%;
+}
+.fill-2 {
+  width: 85%;
+}
+.fill-3 {
+  width: 75%;
+}
+.pricing {
+  background-color: #616161;
+}
+.pricing h2,
+.pricing h3 {
+  color: white;
+}
+.price_card_container {
+  margin-top: 64px;
+  padding: 0 8px;
+  display: flex;
+}
+.price_card_container .Big {
+  margin-top: 0;
+}
+.price_card_container .Big .card_header {
+  background-color: #f44336;
+  padding: 48px 16px;
+}
+.pricing_cards {
+  text-align: center;
+  width: 33%;
+  padding: 0 8px;
+  margin-top: 16px;
+}
+.pricing_cards ul {
+  list-style: none;
+}
+.pricing_cards ul:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.pricing_cards .card_header {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  padding: 32px 16px;
+}
+.pricing_cards .card_items {
+  background-color: white;
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  font-weight: 200;
+}
+.pricing_cards .card_items b {
+  font-weight: 400;
+}
+.pricing_cards .card_items h4 {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  margin: 10px 0;
+}
+.pricing_cards .card_items h5 {
+  color: grey;
+  font-weight: 200;
+}
+.pricing_cards li:last-of-type {
+  background-color: #f1f1f1;
+  padding: 24px 16px;
+}
+.pricing_cards button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 12px 24px;
+}
+.contact {
+  background-color: #f1f1f1;
+}
+.contact_info {
+  margin-top: 48px;
+}
+.contact_info p {
+  margin: 15px 0;
+}
+.contact_info i {
+  display: inline-block;
+  width: 30px;
+  font-size: 36px;
+  text-align: center;
+  margin-right: 16px;
+}
+form {
+  margin-top: 48px;
+}
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+}
+form button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  font-weight: 200;
+  border: none;
+}
+form button:hover {
+  background-color: #a8a7a7;
+  color: black;
+  cursor: pointer;
+}
+.contact_img {
+  background-image: url(https://www.w3schools.com/w3images/map.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin-top: 48px;
+  filter: grayscale(50%);
+}
+footer {
+  padding: 64px 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+footer > a {
+  text-decoration: none;
+  color: black;
+  background-color: #f1f1f1;
+  display: inline-block;
+  padding: 8px 16px;
+  font-weight: 250;
+}
+footer > a:hover {
+  background-color: #dbdbdb;
+  cursor: pointer;
+}
+footer > a i {
+  margin-right: 13px;
+}
+footer p {
+  margin: 15px 0;
+}
+footer p > a {
+  color: white;
+}
+footer p > a:hover {
+  color: green;
+  cursor: pointer;
+}
+.footer_icons {
+  margin: 16px 0;
+  font-size: 24px;
+}
+.footer_icons i:hover {
+  color: #b9b9b9;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .nav_main,
+  .nav_menu {
+    display: none;
+  }
+  .nav_mobile {
+    display: block;
+  }
+  .nav_header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 9;
+  }
+  .nav_header > a {
+    letter-spacing: 3px;
+    color: black;
+    text-decoration: none;
+    padding: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .nav_header input {
+    visibility: hidden;
+  }
+  .nav_header input:checked ~ .nav_menu {
+    display: block;
+  }
+  .nav_header > label {
+    display: block;
+    width: 56px;
+    height: 56px;
+    text-align: center;
+  }
+  .nav_header > label i {
+    font-size: 25px;
+    padding: 16px;
+  }
+  .nav_header > label:hover {
+    background-color: #ccc;
+  }
+  .nav_menu {
+    position: absolute;
+    z-index: 100;
+    background-color: #000000;
+    color: white;
+    width: 35%;
+    height: 100vh;
+    position: fixed;
+  }
+  .nav_menu ul {
+    list-style: none;
+  }
+  .nav_menu li {
+    width: 100%;
+  }
+  .nav_menu a,
+  .nav_menu .close_button {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+    font-weight: 300;
+    color: white;
+  }
+  .nav_menu a:hover,
+  .nav_menu .close_button:hover {
+    color: black;
+    background-color: #dbdbdb;
+  }
+  .nav_menu .close_button {
+    font-size: 18px!important;
+    padding: 16px!important;
+  }
+  .about_icon {
+    flex-direction: column;
+  }
+  .about_icon > div {
+    margin-top: 16px;
+  }
+  .promo_content {
+    flex-direction: column;
+  }
+  .promo_img {
+    width: auto;
+    margin-top: 16px;
+    padding: 0 8px;
+  }
+  .card_container {
+    flex-direction: column;
+  }
+  .card_container .cards {
+    width: auto;
+    margin-top: 16px;
+  }
+  .imgBlock_container {
+    flex-direction: column;
+  }
+  .imgBlock_container .img_blocks {
+    width: auto;
+  }
+  .skills {
+    flex-direction: column;
+  }
+  .skills .skills_info,
+  .skills .skills_categories {
+    width: auto;
+  }
+  .price_card_container {
+    flex-direction: column;
+  }
+  .price_card_container .pricing_cards {
+    width: auto;
+    margin-top: 16px;
+  }
+  .contact_img {
+    height: 40vh;
+  }
 }

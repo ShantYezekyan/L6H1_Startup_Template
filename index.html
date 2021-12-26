@@ -5,10 +5,486 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Lesson 6 Homework - Startup Template</title>
 </head>
 
 <body>
+    <nav class="nav_main">
+        <a href="#home">Logo</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li>
+                <a href="#team">
+                    <i class="fa fa-user"></i>
+                    Team
+                </a>
+            </li>
+            <li>
+                <a href="#work">
+                    <i class="fa fa-th"></i>
+                    Work
+                </a>
+            </li>
+            <li>
+                <a href="#pricing">
+                    <i class="fa fa-usd"></i>
+                    Pricing
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    <i class="fa fa-envelope"></i>
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav class="nav_mobile">
+        <div class="nav_header">
+            <a href="#home">Logo</a>
+            <input type="checkbox" id="BurgerButton">
+            <label for="BurgerButton">
+                <i class="fa fa-bars"></i>
+            </label>
+
+            <div class="nav_menu">
+                <ul>
+                    <li>
+                        <label class="close_button" for="BurgerButton">Close x</label>
+                    </li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#team">TEAM</a></li>
+                    <li><a href="#work">WORK</a></li>
+                    <li><a href="#pricing">PRICING</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+        
+            </div>
+    
+        </div>
+    
+    
+    </nav>
+
+    <header class="main_bgm" id="home">
+        <div class="home_text_container">
+            <span class="slogan-1">Start something that matters</span>
+            <span class="slogan-2">Stop wasting valuable time with projects that just isn't you.</span>
+
+            <a href="#about">Learn more and start today</a>
+
+        </div>
+
+        <div class="home_icons">
+            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-snapchat"></i>
+            <i class="fa fa-pinterest-p"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="about_content container" id="about">
+            <h2>ABOUT THE COMPANY</h2>
+            <h3>Key features of our company</h3>
+            <div class="about_icon">
+                <div>
+                    <i class="fa fa-desktop"></i>
+                    <h4>Responsive</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa fa-heart"></i>
+                    <h4>Passion</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa fa-diamond"></i>
+                    <h4>Design</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa fa-cog"></i>
+                    <h4>Support</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="promo_content container">
+            <div class="promo_text">
+                <h2>We know design.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    <br>
+                    tempor incididunt ut labore et dolore.
+                </p>
+                <a href="#work">
+                    <i class="fa fa-th"></i>
+                    View our works
+                </a>
+            </div>
+
+            <div class="promo_img"></div>
+
+        </section>
+
+        <section class="team_content container" id="team">
+            <h2>THE TEAM</h2>
+            <h3>The ones who runs this company</h3>
+
+            <div class="card_container">
+                <div class="cards">
+                    <div class="card_img">
+                        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John">
+                    </div>
+                    <div class="card_info">
+                        <h2>John Doe</h2>
+                        <h5>CEO & Founder</h5>
+                        <p>
+                            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                            elementum.
+                        </p>
+                        <button>
+                            <i class="fa fa-envelope"></i>
+                            Contact
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="cards">
+                    <div class="card_img">
+                        <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Anja">
+                    </div>
+                    <div class="card_info">
+                        <h2>Anja Doe</h2>
+                        <h5>Art Director</h5>
+                        <p>
+                            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                            elementum.
+                        </p>
+                        <button>
+                            <i class="fa fa-envelope"></i>
+                            Contact
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="cards">
+                    <div class="card_img">
+                        <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Mike">
+                    </div>
+                    <div class="card_info">
+                        <h2>Mike Ross</h2>
+                        <h5>Web Designer</h5>
+                        <p>
+                            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                            elementum.
+                        </p>
+                        <button>
+                            <i class="fa fa-envelope"></i>
+                            Contact
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="cards">
+                    <div class="card_img">
+                        <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Dan">
+                    </div>
+                    <div class="card_info">
+                        <h2>Dan Star</h2>
+                        <h5>Designer</h5>
+                        <p>
+                            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                            elementum.
+                        </p>
+                        <button>
+                            <i class="fa fa-envelope"></i>
+                            Contact
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="stat_content">
+            <div class="stats">
+                <h4>14+</h4>
+                <h5>Partners</h5>
+            </div>
+
+            <div class="stats">
+                <h4>55+</h4>
+                <h5>Projects Done</h5>
+            </div>
+
+            <div class="stats">
+                <h4>89+</h4>
+                <h5>Happy Clients</h5>
+            </div>
+
+            <div class="stats">
+                <h4>150+</h4>
+                <h5>Meetings</h5>
+            </div>
+
+        </section>
+
+        <section class="container" id="work">
+            <h2>OUR WORK</h2>
+            <h3>What we've done for people</h3>
+
+            <div class="imgBlock_container">
+                <div class="img_blocks">
+                    <img src="https://www.w3schools.com/w3images/tech_mic.jpg" alt="microphone">
+                </div>
+                <div class="img_blocks">
+                    <img src="https://www.w3schools.com/w3images/tech_phone.jpg" alt="phone">
+                </div>
+                <div class="img_blocks">
+                    <img src="https://www.w3schools.com/w3images/tech_drone.jpg" alt="drone">
+                </div>
+                <div class="img_blocks">
+                    <img src="https://www.w3schools.com/w3images/tech_sound.jpg" alt="soundbox">
+                </div>
+            </div>
+
+            <div class="imgBlock_container">
+                <div class="img_blocks">
+                    <img src="https://www.w3schools.com/w3images/tech_tablet.jpg" alt="tablet">
+                </div>
+                <div class="img_blocks">
+                    <img src="https://www.w3schools.com/w3images/tech_camera.jpg" alt="camera">
+                </div>
+                <div class="img_blocks">
+                    <img src="https://www.w3schools.com/w3images/tech_typewriter.jpg" alt="typewriter">
+                </div>
+                <div class="img_blocks">
+                    <img src="https://www.w3schools.com/w3images/tech_tableturner.jpg" alt="tableturner">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="skills container">
+            <div class="skills_info">
+                <h2>Our Skills.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    <br>
+                    tempor incididunt ut labore et dolore.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    <br>
+                    tempor incididunt ut labore et dolore.
+                </p>
+            </div>
+
+            <div class="skills_categories">
+                <p>
+                    <i class="fa fa-camera"></i>
+                    Photography
+                </p>
+
+                <div class="skillBar_bg">
+                    <div class="skillBar fill-1">90%</div>
+                </div>
+
+                <p>
+                    <i class="fa fa-desktop"></i>
+                    Web Design
+                </p>
+
+                <div class="skillBar_bg">
+                    <div class="skillBar fill-2">85%</div>
+                </div>
+
+                <p>
+                    <i class="fa fa-photo"></i>
+                    Photoshop
+                </p>
+
+                <div class="skillBar_bg">
+                    <div class="skillBar fill-3">75%</div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="pricing container" id="pricing">
+            <h2>PRICING</h2>
+            <h3>Choose a pricing plan that fits your needs.</h3>
+
+            <div class="price_card_container">
+                <div class="pricing_cards">
+                    <ul>
+                        <li class="card_header">Basic</li>
+                        <li class="card_items">
+                            <b>10GB</b>
+                            Storage
+                        </li>
+                        <li class="card_items">
+                            <b>10</b>
+                            Emails
+                        </li>
+                        <li class="card_items">
+                            <b>10</b>
+                            Domains
+                        </li>
+                        <li class="card_items">
+                            <b>Endless</b>
+                            Support
+                        </li>
+                        <li class="card_items">
+                            <h4>$10</h4>
+                            <h5>per month</h5>
+                        </li>
+                        <li>
+                            <button>Sign Up</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pricing_cards Big">
+                    <ul>
+                        <li class="card_header">Pro</li>
+                        <li class="card_items">
+                            <b>25GB</b>
+                            Storage
+                        </li>
+                        <li class="card_items">
+                            <b>25</b>
+                            Emails
+                        </li>
+                        <li class="card_items">
+                            <b>25</b>
+                            Domains
+                        </li>
+                        <li class="card_items">
+                            <b>Endless</b>
+                            Support
+                        </li>
+                        <li class="card_items">
+                            <h4>$25</h4>
+                            <h5>per month</h5>
+                        </li>
+                        <li>
+                            <button>Sign Up</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pricing_cards">
+                    <ul>
+                        <li class="card_header">Premium</li>
+                        <li class="card_items">
+                            <b>50GB</b>
+                            Storage
+                        </li>
+                        <li class="card_items">
+                            <b>50</b>
+                            Emails
+                        </li>
+                        <li class="card_items">
+                            <b>50</b>
+                            Domains
+                        </li>
+                        <li class="card_items">
+                            <b>Endless</b>
+                            Support
+                        </li>
+                        <li class="card_items">
+                            <h4>$50</h4>
+                            <h5>per month</h5>
+                        </li>
+                        <li>
+                            <button>Sign Up</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="contact container" id="contact">
+            <h2>CONTACT</h2>
+            <h3>Lets get in touch. Send us a message:</h3>
+
+            <div class="contact_info">
+                <p>
+                    <i class="fa fa-map-marker"></i> Chicago, US
+                </p>
+                <p>
+                    <i class="fa fa-phone"></i>
+                    Phone: +00 151515
+                </p>
+                <p>
+                    <i class="fa fa-envelope"></i>
+                    Email: mail@mail.com
+                </p>
+            </div>
+
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <input type="text" placeholder="Message">
+                <button>
+                    <i class="fa fa-paper-plane"></i>
+                    SEND MESSAGE
+                </button>
+            </form>
+
+            <div class="contact_img"></div>
+
+        </section>
+
+        <footer>
+            <a href="#home">
+                <i class="fa fa-arrow-up"></i>
+                To the top
+            </a>
+
+            <div class="footer_icons">
+                <i class="fa fa-facebook-official"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-snapchat"></i>
+                <i class="fa fa-pinterest-p"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+
+            <p>
+                Powered by
+                <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
+            </p>
+        </footer>
+
+    </main>
 
 </body>
 
