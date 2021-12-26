@@ -226,3 +226,18 @@ h3 {
 .stat_content h5 {
   font-weight: 300;
 }
+.imgBlock_container {
+  margin-top: 64px;
+  padding: 0 8px;
+  display: flex;
+}
+.imgBlock_container:last-of-type {
+  margin-top: 16px;
+}
+.img_blocks {
+  width: 24%;
+  padding: 0 8px;
+}
+.img_blocks img {
+  width: 100%;
+}
